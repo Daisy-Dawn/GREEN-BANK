@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+import withMT from "@material-tailwind/react/utils/withMT";
+
+
+export default withMT( {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -7,7 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        mPlus1: ['M PLUS 1', "sans-serif"]
+        mPlus1: ['M PLUS 1', "sans-serif"],
+        poppins: ['Poppins', "sans-serif"]
       },
       // backgroundColor: {
 
@@ -18,4 +22,4 @@ export default {
     },
   },
   plugins: [],
-}
+})
